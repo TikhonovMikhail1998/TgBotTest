@@ -25,7 +25,7 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount1((count1) => {count1=tele.initData;console.log(tele.initData)})}>
+        <button onClick={() => setCount1((count1) => {count1=tele.initDataUnsafe;console.log(tele.initData)})}>
           count is {count1}
         </button>
         <button onClick={() => {console.log(tele)}}>
