@@ -1,10 +1,17 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+const tele=window.Telegram.WebApp
+
 function App() {
   const [count, setCount] = useState(0)
+  const [count1, setCount1] = useState(0)
+  useEffect(()=>{
+    tele.ready();
+  })
+  
 
   return (
     <>
@@ -18,8 +25,8 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+        <button onClick={() => setCount1((count1) => {count1=tele;console.log(tele.initData)})}>
+          count is {count1}
         </button>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
