@@ -25,10 +25,10 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount1((count1) => {count1=tele.initDataUnsafe;console.log(tele.initData)})}>
+        <button onClick={() => setCount1((count1) => {count1=tele.initDataUnsafe;console.log(tele.initDataUnsafe)})}>
           count is {count1}
         </button>
-        <button onClick={() => {console.log(tele)}}>
+        <button onClick={() => {console.log(tele.InitData.name);console.log(tele.InitDataUnsafe.name.id)}}>
           count is {count}
         </button>
         <p>
