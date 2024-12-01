@@ -28,7 +28,7 @@ function App() {
         <button onClick={() => setCount1((count1) => {count1=tele.initData;console.log(tele.initData)})}>
           count is {count1}
         </button>
-        <button onClick={() => setCount((count) => {count=tele.version;console.log(tele.initData)})}>
+        <button onClick={() => {console.log(tele)}}>
           count is {count}
         </button>
         <p>
