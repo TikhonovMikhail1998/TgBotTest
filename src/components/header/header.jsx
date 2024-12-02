@@ -8,9 +8,9 @@ function Header() {
   return (
     <>
      <div className='header'>
-      <button className='block'>1</button>
-      <button className='block'>1</button>
-      <button className='block'>1</button>
+      <button disabled className='block'>...</button>
+      <button disabled className='block'>...</button>
+      <button autoFocus className='block active'>Профиль</button>
       
      </div>
     </>

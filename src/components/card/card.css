@@ -22,6 +22,11 @@
     width: 100%;
     height: 100%;
 }
-.info{
-   
+button:disabled {
+
+    cursor: not-allowed; /* Указывает, что кнопка недоступна */
+    opacity: 0.8; /* Уменьшает видимость для эффекта недоступности */
+  }
+button{
+background: var(--tg-theme-button-color);
 }
