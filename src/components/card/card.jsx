@@ -10,11 +10,15 @@ function Card() {
   return (
     <>
     <div className='container'>
-     <img className='photo' src={window.Telegram.WebApp.initDataUnsafe?.user?.photo_url}></img>
-     <div className='block'>
-      <div>Имя+ {window.Telegram.WebApp.initDataUnsafe?.user?.first_name}</div>
-      <div>Фамилия + {window.Telegram.WebApp.initDataUnsafe?.user?.last_name}</div>
-      <div>Никнейм + {window.Telegram.WebApp.initDataUnsafe?.user?.username}</div>
+      <div>
+        <div>Фото профиля:</div>
+      <img className='photo' src={window.Telegram.WebApp.initDataUnsafe?.user?.photo_url}></img>
+      </div>
+     
+     <div className='block1'>
+      <div className='info'>Имя: {window.Telegram.WebApp.initDataUnsafe?.user?.first_name}</div>
+      <div className='info'>Фамилия: {window.Telegram.WebApp.initDataUnsafe?.user?.last_name}</div>
+      <div className='info'>Username: {window.Telegram.WebApp.initDataUnsafe?.user?.username}</div>
       </div>
       </div>
      
