@@ -1,7 +1,7 @@
 import './card.css'
 const tele=window.Telegram.WebApp
-  console.log(tele.initDataUsafe)
-  console.log(tele.initDataUsafe.user)
+  console.log(tele.initDataUnsafe)
+  console.log(tele.initDataUnsafe.user)
 function Card() {
   
  
@@ -10,11 +10,11 @@ function Card() {
   return (
     <>
     <div className='container'>
-     <img className='photo' src={window.Telegram.WebApp.initDataUsafe?.user?.photo_url}></img>
+     <img className='photo' src={window.Telegram.WebApp.initDataUnsafe?.user?.photo_url}></img>
      <div className='block'>
-      <div>Имя+ {window.Telegram.WebApp.initDataUsafe?.user?.first_name}</div>
-      <div>Фамилия + {window.Telegram.WebApp.initDataUsafe?.user?.last_name}</div>
-      <div>Никнейм + {window.Telegram.WebApp.initDataUsafe?.user?.username}</div>
+      <div>Имя+ {window.Telegram.WebApp.initDataUnsafe?.user?.first_name}</div>
+      <div>Фамилия + {window.Telegram.WebApp.initDataUnsafe?.user?.last_name}</div>
+      <div>Никнейм + {window.Telegram.WebApp.initDataUnsafe?.user?.username}</div>
       </div>
       </div>
      
