@@ -1,0 +1,19 @@
+.photo{
+    
+    width: 33.4%;
+    height: 100%;
+    display: flex; /* Для центровки содержимого */
+    align-items: center; /* Центровка по вертикали */
+    justify-content: center; /* Центровка по горизонтали */
+    
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.block{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
