@@ -9,9 +9,9 @@ function Card() {
 
   return (
     <>
+    <div style={{marginLeft:"5vw"}}>Фото профиля:</div>
     <div className='container'>
       <div>
-        <div>Фото профиля:</div>
       <img className='photo' src={window.Telegram.WebApp.initDataUnsafe?.user?.photo_url}></img>
       </div>
      <div style={{width:'100%'}}></div>
