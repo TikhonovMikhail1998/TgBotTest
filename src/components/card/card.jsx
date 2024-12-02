@@ -3,7 +3,9 @@ import './card.css'
 function Card() {
   
  
-  
+  const tele=window.Telegram.WebApp
+  console.log(tele.initDataUsafe)
+  console.log(tele.initDataUsafe.user)
 
   return (
     <>
