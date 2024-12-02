@@ -14,7 +14,7 @@ function Card() {
         <div>Фото профиля:</div>
       <img className='photo' src={window.Telegram.WebApp.initDataUnsafe?.user?.photo_url}></img>
       </div>
-     
+     <div style={{width:'100%'}}></div>
      <div className='block1'>
       <div className='info'>Имя: {window.Telegram.WebApp.initDataUnsafe?.user?.first_name}</div>
       <div className='info'>Фамилия: {window.Telegram.WebApp.initDataUnsafe?.user?.last_name}</div>
