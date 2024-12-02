@@ -1,5 +1,10 @@
-body, html {
+*{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  background: var(--tg-theme-bg-color);
+  color:var(--tg-theme-text-color);
   height: 100%; /* Чтобы высота 20% считалась от полной высоты окна */
 }
